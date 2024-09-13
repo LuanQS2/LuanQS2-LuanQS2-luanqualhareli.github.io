@@ -440,8 +440,8 @@ main {
     font-family: inter;
     font-size: 32px;
     font-weight: 500;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-bottom: 50px;
     text-transform: uppercase;
 }
 
@@ -498,6 +498,7 @@ form textarea::placeholder {
     font-size: 20px;
     font-weight: bold;
     box-shadow: 2px 3px 4px 1px #161616;
+    margin-bottom: 50px;
 }
 
 .form-buttom:hover {
@@ -506,46 +507,75 @@ form textarea::placeholder {
     transform: scale(1.01);
 }
 
-.footer-links {
-    width: 100%;
-    height: 150px;
-    background: #212121;
-    display: flex;
-    align-items: center;
+footer .footer-interface{
+    padding: 40px 4% 20px;
+    background: linear-gradient(to bottom, #1a1a1a 60%, #ff0e12d5);
+    box-shadow: 0 0 40px 10px #FF0004;
+}
+
+.footer-interface{
+    margin: 0 auto;
+}
+
+.line-footer1{
+    border-bottom: 2px solid #FF0004;
+}
+
+.line-footer1 p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
     justify-content: center;
-    position: relative;
-    margin-top: 100px;  
+    margin-bottom: 20px;
 }
 
-.footer-links a {
+.line-footer2 {
+    border-bottom: 2px solid #FF0004;
+    margin-bottom: 20px;
+}
+
+.box-line-footer {
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    gap: 5px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.footer-links i {
-    font-size: 30px;
-    text-align: center;
+.logo-footer img {
+    max-width: 165px;
 }
 
-.footer-links a:hover {
-    color: #FFF;
+.button-links i {
+   font-size: 30px;
+    margin-left: 45px;
+    color: #fff;
+}
+
+.button-links i:hover {
+    color: #FF0004;
     cursor: pointer;
 }
 
-.copyright {
-    width: 100%;
-    height: 40px;
-    background: #FF0004;
+.footer-mail {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
-.copyright p {
+.footer-mail i {
+    font-size: 20px;
+}
+
+.footer-mail a {
+    font-size: 16px;
+    color: #fff;
+}
+
+.copyright {
+    background: #161616;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
-    color: #ffffff;
-    font-weight: bold;
 }
 
 @media screen and (max-width: 915px) {
@@ -586,6 +616,11 @@ form textarea::placeholder {
 
     .abrir-menu {
         display: block;
+    }
+
+    .button-links i {
+        font-size: 20px;
+        margin-left: 30px;
     }
         
 }

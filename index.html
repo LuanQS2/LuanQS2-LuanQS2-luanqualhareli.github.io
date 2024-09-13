@@ -125,19 +125,19 @@
                 <h2><span class="part1-form">Fale</span> <span class="part2-form">comigo</span></h2>
                     <form name="contact" netlify>
                         <p>
-                            <label>Seu nome<input type="nome" name="Nome" /></label>
+                            <label><input type="Nome" name="nome" placeholder="Seu nome" required></label>
                         </p>
                         <p>
-                            <label>Seu email<input type="email" name="Email" /></label>
+                            <label><input type="email" name="email" placeholder="Seu e-mail" required></label>
                         </p>
                         <p>
-                            <label>Seu celular<input type="celular" name="Celular" /></label>
+                            <label><input type="celular" name="celular" placeholder="Seu celular"></label>
+                        </p>
+                        <p class="div-mensagem">
+                            <label><textarea name="mensagem" placeholder="Sua mensagem" required></textarea></label>
                         </p>
                         <p>
-                            <label>Sua mensagem<input type="mensagem" name="Mensagem" /></label>
-                        </p>
-                        <p>
-                            <button class="form-buttom" type="submit">Send</button>
+                            <button class="form-buttom" type="submit">Enviar</button>
                         </p>
                     </form>
             </div>
@@ -146,14 +146,27 @@
     
     </main>
     <footer>
-        <div class="footer-links">
-            <a href="https://github.com/LuanQS" target="_blank"><i class='bx bxl-github'></i></a>
-            <a href="mailto:luanqsegura1@gmail.com" class="link-email" target="_blank"><i class='bx bx-mail-send'></i></a>
-            <a href="https://www.linkedin.com/in/luan-qualhareli-segura-9975b431a" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <div class="footer-interface">
+            <section class="line-footer1">
+                <p>Obrigado por visitar meu portfólio! Fique à vontade para explorar e entrar em contato.</p>
+            </section>
+            <section class="line-footer2">
+                <div class="box-line-footer">
+                    <div class="logo-footer"><img src="img/logo-branco.svg" alt="logo-footer"></div>
+                    <div class="button-links">
+                        <a href="https://wa.me/qr/GKXITYMQ4FPUH1" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="https://github.com/LuanQS2" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/luan-qualhareli-segura-9975b431a/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="line-footer3"><div class="footer-mail"><a href="mailto:luanqsegura1@gmail.com"><i class='bx bx-envelope'></i>luanqsegura1@gmail.com</a></div></section>
+            
         </div>
-        <div class="copyright">
-            <p>&copy; 2024 Luan Qualhareli Segura. Todos os direitos reservados.</p>
-        </div>
+        <section class="copyright">
+                <p>© 2024 Luan Qualhareli Segura. Todos os direitos reservados.</p>
+        </section>
     </footer>
 </body>
 <script src="./js/script.js"></script>
